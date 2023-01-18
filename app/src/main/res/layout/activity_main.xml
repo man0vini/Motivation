@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:padding="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="16dp">
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_all_inclusive"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_happy" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_sunny" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/cabin"
+        android:text="Ola Koltlin!"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/text_phrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/cabin"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <View
+        android:layout_width="128dp"
+        android:layout_height="3dp"
+        android:layout_below="@+id/text_phrase"
+        android:layout_centerHorizontal="true"
+        android:background="@color/dark_purple"
+        android:elevation="5dp" />
+
+    <Button
+        android:id="@+id/button_new_phrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/dark_purple"
+        android:fontFamily="@font/cabin"
+        android:text="@string/new_phrase" />
+
+</RelativeLayout>
