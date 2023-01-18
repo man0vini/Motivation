@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.buttonNewPhrase.setOnClickListener(this)
     }
 
-    override fun onClick(view: View) {
+    override fun onClick(view:View) {
         if (view.id == R.id.button_new_phrase) {
             var s = ""
         }
