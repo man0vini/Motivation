@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <LinearLayout
         android:id="@+id/linear_menu"
@@ -19,6 +19,7 @@
 
 
         <ImageView
+            android:id="@+id/image_all"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -26,12 +27,14 @@
             app:tint="@color/white" />
 
         <ImageView
+            android:id="@+id/image_happy"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
             android:src="@drawable/ic_happy" />
 
         <ImageView
+            android:id="@+id/image_sunny"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
